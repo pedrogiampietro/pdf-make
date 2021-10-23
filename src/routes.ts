@@ -14,7 +14,9 @@ routes.get('/products', async (request: Request, response: Response) => {
   return response.json(products);
 });
 
-routes.get('/products/report', (request: Request, response: Response) => {
+routes.get('/products/report', async (request: Request, response: Response) => {
+  const products = await prismaClient.products.findMany();
+
   const fonts = {
     Helvetica: {
       normal: 'Helvetica',
@@ -26,11 +28,25 @@ routes.get('/products/report', (request: Request, response: Response) => {
 
   const printer = new PDFPrinter(fonts);
 
+  const body = [];
+
+  for await (let product of products) {
+    const rows = new Array();
+    rows.push(product.id);
+    rows.push(product.description);
+    rows.push(product.price);
+    rows.push(product.quantity);
+
+    body.push(rows);
+  }
+
   const docDefefinitions: TDocumentDefinitions = {
     defaultStyle: { font: 'Helvetica' },
     content: [
       {
-        text: 'test xd.',
+        table: {
+          body: [['ID', 'Descrição', 'Preço', 'Quantidade'], ...body],
+        },
       },
     ],
   };
