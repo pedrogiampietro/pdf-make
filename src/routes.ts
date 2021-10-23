@@ -30,18 +30,27 @@ routes.get('/products/report', (request: Request, response: Response) => {
     defaultStyle: { font: 'Helvetica' },
     content: [
       {
-        text: 'textando relatório.',
+        text: 'test xd.',
       },
     ],
   };
 
   const pdfDoc = printer.createPdfKitDocument(docDefefinitions);
 
-  pdfDoc.pipe(fs.createWriteStream('Relatorio.pdf'));
+  // pdfDoc.pipe(fs.createWriteStream('Relatorio.pdf'));
+
+  const chunks: Array<Buffer> = [];
+
+  pdfDoc.on('data', chunk => {
+    chunks.push(chunk);
+  });
 
   pdfDoc.end();
 
-  response.send('Relatório concluído!');
+  pdfDoc.on('end', () => {
+    const result = Buffer.concat(chunks);
+    response.end(result);
+  });
 });
 
 export { routes };
