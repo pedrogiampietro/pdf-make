@@ -9,25 +9,25 @@
 </h4>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/pedrogiampietro/node-pdf-generator.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/pedrogiampietro/pdf-make..svg">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/pedrogiampietro/node-pdf-generator.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/pedrogiampietro/pdf-make..svg">
 
-  <a href="https://www.codacy.com/app/pedrogiampietro/node-pdf-generator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pedrogiampietro/node-pdf-generator&amp;utm_campaign=Badge_Grade">
+  <a href="https://www.codacy.com/app/pedrogiampietro/pdf-make.?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pedrogiampietro/pdf-make.&amp;utm_campaign=Badge_Grade">
     <img alt="Codacy grade" src="https://api.codacy.com/project/badge/Grade/d9a93d557a8f4977910e5b6ae1d708fe">
   </a>
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/pedrogiampietro/node-pdf-generator.svg">
-  <a href="https://github.com/pedrogiampietro/node-pdf-generator/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/pedrogiampietro/node-pdf-generator.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/pedrogiampietro/pdf-make..svg">
+  <a href="https://github.com/pedrogiampietro/pdf-make./commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/pedrogiampietro/pdf-make..svg">
   </a>
 
-  <a href="https://github.com/pedrogiampietro/node-pdf-generator/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/pedrogiampietro/node-pdf-generator.svg">
+  <a href="https://github.com/pedrogiampietro/pdf-make./issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/pedrogiampietro/pdf-make..svg">
   </a>
 
-  <a href="https://github.com/pedrogiampietro/node-pdf-generator/blob/master/LICENSE">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/pedrogiampietro/node-pdf-generator.svg">
+  <a href="https://github.com/pedrogiampietro/pdf-make./blob/master/LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/pedrogiampietro/pdf-make..svg">
   </a>
 </p>
 
@@ -81,7 +81,7 @@ the solution is developed with the technologies below:
 
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/pedrogiampietro/node-pdf-generator/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/pedrogiampietro/pdf-make./blob/master/LICENSE) for more information.
 
 [prisma]: https://www.prisma.io/
 [pdfmake]: http://pdfmake.org/#/
